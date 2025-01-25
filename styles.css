@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Lato";
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
@@ -14,25 +14,26 @@ a {
     text-decoration: none;
     color: white;
 }
-
+/*navbar styling */
 .navContainer {
     /* border: solid red 2px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #9294b0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-color: rgb(26, 26, 26);
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 20px auto 10px auto;
-    width: 40%;
+    width: 30%;
     max-width: 80%;
     border-radius: 50px;
     font-size: 1.3rem;
-    gap: 10px;
-    column-gap: 5rem;
+    gap: 1rem;
+    column-gap: 2rem;
     flex-wrap: wrap;
     font-weight: bold;
+    border: solid rgb(255, 0, 0) 2px;
 }
 
 .navLeft a {
@@ -51,34 +52,143 @@ a {
 
 .navLeft a:hover {
     color: rgb(89, 0, 255);
-    border-radius: 10%;
+    border-radius: 10px;
     border-color:rgb(89, 0, 255);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
     
 }
 
 .navRight a{
-    font-family: "Montserrat";
     font-weight: bold;
-    color: white;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    /* border: solid red 2px; */
-    border-radius: 50px;
-    border-color: white;
-    border: solid;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: .3rem;
+    border-radius: 15px;
+    border: solid #2e377c 5px; 
     margin-left: 2rem;
-    font-size: 2rem;
     transition: 0.2s ease-in-out;
-    background: rgb(141, 80, 255);
-    font-family: "Smooch Sans";
+    /* font-family: "Smooch Sans"; */
 }
 
 .navRight a:hover {
     border-color:rgb(36, 0, 104);
+    border-radius: 50px;
     background: rgb(89, 0, 255);
-    color: rgb(255, 255, 255);
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
+    color: rgb(255, 239, 239);
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+/* END OF NAV STYLING */
+
+/*mainContainer styling all below */
+.mainContainer {
+    margin-top: 4rem;
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: #323442;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mainContainer img {
+    width: 22vw;
+    display: block; 
+    text-indent: -9999px;
+}
+
+/*side with logo and text */
+.subMainContainer {
+    /* border: solid blue 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mc2 h1 a{
+    font-size: 6rem;
+    color: rgb(212, 178, 255);
+}
+
+.mc2 span {
+    font-size: 1.6rem;
+}
+
+.mc2 a {
+    font-size: 1.4rem;
+}
+/* styling for yt video */
+.mc3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 1rem;
+    margin-top: 3rem;
+    color: #ffffff;
+}
+.mc3 iframe{
+    /* border: solid purple 2px; */
+    width: 1000px; 
+    height: 563px;
+}
+
+/* About Section */
+
+.aboutContainer {
+    border: solid red 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-top: 3rem;
+    column-gap: 2rem;;
+}
+.aboutLeft {
+    border: solid blue 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 60%;
+    width: 100%;
+}
+.aboutLeft h1 {
+    font-size: 3rem;
+    color: rgb(212, 178, 255);
+}
+.aboutLeft span {
+    color: rgb(255, 73, 134);
+}
+
+#great-pc {
+    color: rgb(148, 255, 148);
+}
+.aboutLeft p {
+    font-size: 1.4rem;
+}
+.aboutRight {
+    border: solid green 2px;
+    width: 100%;
+    max-width: 40%;
+    background: white;
+}
+
+#star {
+    width: 20vw;
+    border: solid blue 2px;
+}
+
+#crossing-arms {
+    width: 20vw;
+    border: solid orange 2px;
 }
