@@ -1,0 +1,84 @@
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #30334b;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navContainer {
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #9294b0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 20px auto 10px auto;
+    width: 40%;
+    max-width: 80%;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    gap: 10px;
+    column-gap: 5rem;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.navLeft a {
+    margin: auto 1rem auto 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: 0.3s ease-in-out;
+    border-left: solid #30334b00 2px;
+    border-right: solid #30334b00 2px;
+    height: 100%;
+    /* padding-top: 1.3rem;
+    padding-bottom: 1.3rem; */
+}
+
+.navLeft a:hover {
+    color: rgb(89, 0, 255);
+    border-radius: 10%;
+    border-color:rgb(89, 0, 255);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.navRight a{
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    /* border: solid red 2px; */
+    border-radius: 50px;
+    border-color: white;
+    border: solid;
+    margin-left: 2rem;
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+    background: rgb(141, 80, 255);
+    font-family: "Smooch Sans";
+}
+
+.navRight a:hover {
+    border-color:rgb(36, 0, 104);
+    background: rgb(89, 0, 255);
+    color: rgb(255, 255, 255);
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
