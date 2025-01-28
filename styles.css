@@ -25,7 +25,7 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 20px auto 10px auto;
-    width: 30%;
+    width: 40%;
     max-width: 80%;
     border-radius: 50px;
     font-size: 1.3rem;
@@ -90,7 +90,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 3rem;
     background: #323442;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -109,6 +109,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-width: 50vw;
 }
 
 .mc2 h1 a{
@@ -136,14 +137,14 @@ a {
 }
 .mc3 iframe{
     /* border: solid purple 2px; */
-    width: 1000px; 
-    height: 563px;
+    width: 800px; 
+    height: 450px;
 }
 
 /* About Section */
 
 .aboutContainer {
-    border: solid red 2px;
+    /* border: solid red 2px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -151,10 +152,10 @@ a {
     max-width: 70%;
     margin-left: 15%;
     margin-top: 3rem;
-    column-gap: 2rem;;
+    column-gap: 5rem;;
 }
 .aboutLeft {
-    border: solid blue 2px;
+    /* border: solid blue 2px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -170,25 +171,316 @@ a {
     color: rgb(255, 73, 134);
 }
 
-#great-pc {
+#green-bold {
     color: rgb(148, 255, 148);
 }
 .aboutLeft p {
     font-size: 1.4rem;
 }
 .aboutRight {
-    border: solid green 2px;
+    /* border: solid green 2px; */
+    display: flex;
+    flex-direction: row;
     width: 100%;
     max-width: 40%;
     background: white;
 }
 
-#star {
-    width: 20vw;
+/* #star {
+    width: 10vw;
+    height: 100%;
+    border: solid blue 2px;
+} */
+
+#crossing-arms {
+
+    /* border: solid orange 2px; */
+    /* border-radius: 1000px; */
+    border: solid 2px red;
+}
+
+#brand {
+    font-size: 2rem;
+    color:rgb(148, 255, 148);
+}
+
+/* Learn more container */
+
+.learnMoreContainer {
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    width: 50%;
+    margin-left: 25%;
+    background: #64688b;
+    border: solid #9a9a9b 2px;
+    border-radius: 15px;
+    gap: 3rem;
+    transition: .7s ease-in-out;
+    height: 35vw;
+    font-size: 1.4rem;
+}
+
+.learnMoreContainer:hover {
+    border-radius: 150px;
+    width: 70%;
+    margin-left: 15%;
+    height: 35vw;
+    font-size: 1.2rem;
+}
+
+.learnMoreContainer img {
+    width: 180px;
+    height: 180px;
+}
+.learnRight img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+.learnLeft {
+    border: solid blue 2px;
+    max-width: 50%;
+    width: 40%;
+    height: 300px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.learnLeft a {
+    color: rgb(255, 255, 255);
+    background: rgb(119, 0, 255);
+    border: solid rgb(255, 203, 255) 2px;
+    border-radius: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+.learnRight {
+    border: solid green 2px;
+    max-width: 50%;
+    width: 40%;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pc1Cont {
     border: solid blue 2px;
 }
 
-#crossing-arms {
-    width: 20vw;
-    border: solid orange 2px;
+.pc2Cont {
+    border: solid red 2px;
+}
+
+/* Base styles remain as they are */
+
+/* Adjustments for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+    .navContainer {
+        flex-direction: column;
+        width: 90%;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .mainContainer img {
+        width: 50vw;
+    }
+
+    .mc2 h1 a {
+        font-size: 3rem;
+    }
+
+    .mc2 span, .mc2 a {
+        font-size: 1rem;
+    }
+
+    .mc3 iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+        gap: 2rem;
+    }
+
+    .aboutLeft {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .aboutRight img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .learnMoreContainer {
+        display: none;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        height: 35vw;
+        padding: 2rem;
+        font-size: 0.2rem;
+        flex-wrap: wrap;
+    }
+
+    .learnMoreContainer img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .learnLeft, .learnRight {
+        max-width: 100%;
+    }
+
+    .learnRight {
+        gap: 1rem;
+    }
+}
+
+/* Adjustments for screens between 769px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navContainer {
+        width: 80%;
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .mainContainer img {
+        width: 30vw;
+    }
+
+    .mc2 h1 a {
+        font-size: 4rem;
+    }
+
+    .mc3 iframe {
+        width: 70%;
+        height: auto;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    .aboutLeft {
+        text-align: center;
+    }
+
+    .aboutRight img {
+        width: 80%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .learnMoreContainer {
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+        font-size: 1.2rem;
+    }
+
+    .learnMoreContainer img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .learnLeft, .learnRight {
+        max-width: 100%;
+    }
+
+    .learnRight {
+        gap: 2rem;
+        display: none;
+    }
+    .learnLeft a {
+        color: rgb(255, 255, 255);
+        background: rgb(119, 0, 255);
+        border: solid rgb(255, 203, 255) 2px;
+        border-radius: 10px;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .learnLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+/* Adjustments for large screens (larger than 1200px) */
+@media (min-width: 1200px) and (max-width: 1700px) {
+    .mainContainer img {
+        width: 18vw;
+    }
+
+    .mc2 h1 a {
+        font-size: 7rem;
+    }
+
+    .learnMoreContainer {
+        flex-direction: row;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 1.2rem;
+    }
+
+    .learnMoreContainer img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .learnLeft, .learnRight {
+        max-width: 100%;
+    }
+
+    .learnRight {
+        gap: 0rem;
+        font-size: 0.7rem;
+        /* display: none; */
+    }
+    .learnLeft a {
+        color: rgb(255, 255, 255);
+        background: rgb(119, 0, 255);
+        border: solid rgb(255, 203, 255) 2px;
+        border-radius: 10px;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .learnLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
 }
